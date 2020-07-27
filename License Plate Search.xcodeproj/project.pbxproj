@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F3E887C24A538F400493097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E887B24A538F400493097 /* AppDelegate.swift */; };
+		7F3E887E24A538F400493097 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E887D24A538F400493097 /* SceneDelegate.swift */; };
+		7F3E888124A538F400493097 /* License_Plate_Search.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E887F24A538F400493097 /* License_Plate_Search.xcdatamodeld */; };
+		7F3E888324A538F400493097 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E888224A538F400493097 /* ContentView.swift */; };
+		7F3E888524A538FA00493097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3E888424A538FA00493097 /* Assets.xcassets */; };
+		7F3E888824A538FA00493097 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3E888724A538FA00493097 /* Preview Assets.xcassets */; };
+		7F3E888B24A538FA00493097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3E888924A538FA00493097 /* LaunchScreen.storyboard */; };
+		7F3E889524A53B2D00493097 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E889424A53B2D00493097 /* State.swift */; };
+		7F3E889724A5456500493097 /* StateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E889624A5456500493097 /* StateDetail.swift */; };
+		7F50D13124C1FC940043E903 /* StateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F50D13024C1FC940043E903 /* StateProvider.swift */; };
+		7F63B74424BDF1460068AAB4 /* StateDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F63B74324BDF1460068AAB4 /* StateDetailCell.swift */; };
+		7FE533ED24AB8D2800174F1E /* Plate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE533EC24AB8D2800174F1E /* Plate.swift */; };
+		7FE533EF24AB8DAF00174F1E /* Alabama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE533EE24AB8DAF00174F1E /* Alabama.swift */; };
+		7FE533F224ABD61100174F1E /* Alaska.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE533F124ABD61100174F1E /* Alaska.swift */; };
+		7FE533F424ABD62200174F1E /* Arizona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE533F324ABD62200174F1E /* Arizona.swift */; };
+		7FE533F624ABD62C00174F1E /* Arkansas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE533F524ABD62C00174F1E /* Arkansas.swift */; };
+		7FE533F824ABD63C00174F1E /* California.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE533F724ABD63C00174F1E /* California.swift */; };
+		7FE533FA24ABD64500174F1E /* Colorado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE533F924ABD64500174F1E /* Colorado.swift */; };
+		7FE533FC24ABD64D00174F1E /* Connecticut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE533FB24ABD64D00174F1E /* Connecticut.swift */; };
+		7FE533FE24ABD65B00174F1E /* Delaware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE533FD24ABD65B00174F1E /* Delaware.swift */; };
+		7FE5340024ABD66200174F1E /* Florida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE533FF24ABD66200174F1E /* Florida.swift */; };
+		7FE5340224ABD66900174F1E /* Georgia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5340124ABD66900174F1E /* Georgia.swift */; };
+		7FE5340424ABD67B00174F1E /* Hawaii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5340324ABD67B00174F1E /* Hawaii.swift */; };
+		7FE5340624ABD68300174F1E /* Idaho.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5340524ABD68300174F1E /* Idaho.swift */; };
+		7FE5340824ABD68B00174F1E /* Illinois.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5340724ABD68B00174F1E /* Illinois.swift */; };
+		7FE5340A24ABD69600174F1E /* Indiana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5340924ABD69600174F1E /* Indiana.swift */; };
+		7FE5340C24ABD6A200174F1E /* Iowa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5340B24ABD6A200174F1E /* Iowa.swift */; };
+		7FE5340E24ABD6A900174F1E /* Kansas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5340D24ABD6A900174F1E /* Kansas.swift */; };
+		7FE5341024ABD6B000174F1E /* Kentucky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5340F24ABD6B000174F1E /* Kentucky.swift */; };
+		7FE5341224ABD6B800174F1E /* Louisiana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5341124ABD6B800174F1E /* Louisiana.swift */; };
+		7FE5341424ABD6C700174F1E /* Maine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5341324ABD6C700174F1E /* Maine.swift */; };
+		7FE5341724ABD6D600174F1E /* Maryland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5341624ABD6D600174F1E /* Maryland.swift */; };
+		7FE5341924ABD6E900174F1E /* Massachusetts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5341824ABD6E900174F1E /* Massachusetts.swift */; };
+		7FE5341B24ABD70500174F1E /* Michigan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5341A24ABD70500174F1E /* Michigan.swift */; };
+		7FE5341D24ABD70C00174F1E /* Minnesota.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5341C24ABD70C00174F1E /* Minnesota.swift */; };
+		7FE5341F24ABD71400174F1E /* Mississippi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5341E24ABD71400174F1E /* Mississippi.swift */; };
+		7FE5342124ABD72200174F1E /* Missouri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5342024ABD72200174F1E /* Missouri.swift */; };
+		7FE5342324ABD72F00174F1E /* Montana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5342224ABD72F00174F1E /* Montana.swift */; };
+		7FE5342524ABD73500174F1E /* Nebraska.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5342424ABD73500174F1E /* Nebraska.swift */; };
+		7FE5342724ABD73C00174F1E /* Nevada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5342624ABD73C00174F1E /* Nevada.swift */; };
+		7FE5342924ABD75100174F1E /* NewHampshire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5342824ABD75100174F1E /* NewHampshire.swift */; };
+		7FE5342B24ABD75B00174F1E /* NewJersey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5342A24ABD75B00174F1E /* NewJersey.swift */; };
+		7FE5342D24ABD76200174F1E /* NewMexico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5342C24ABD76200174F1E /* NewMexico.swift */; };
+		7FE5342F24ABD76C00174F1E /* NewYork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5342E24ABD76C00174F1E /* NewYork.swift */; };
+		7FE5343124ABD77D00174F1E /* NorthCarolina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5343024ABD77D00174F1E /* NorthCarolina.swift */; };
+		7FE5343324ABD78700174F1E /* NorthDakota.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5343224ABD78700174F1E /* NorthDakota.swift */; };
+		7FE5343524ABD79200174F1E /* Ohio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5343424ABD79200174F1E /* Ohio.swift */; };
+		7FE5343724ABD7B100174F1E /* Oklahoma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5343624ABD7B100174F1E /* Oklahoma.swift */; };
+		7FE5343924ABD7B900174F1E /* Oregon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5343824ABD7B900174F1E /* Oregon.swift */; };
+		7FE5343B24ABD7CA00174F1E /* Pennsylvania.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5343A24ABD7CA00174F1E /* Pennsylvania.swift */; };
+		7FE5343D24ABD7DB00174F1E /* RhodeIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5343C24ABD7DB00174F1E /* RhodeIsland.swift */; };
+		7FE5343F24ABD7E400174F1E /* SouthCarolina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5343E24ABD7E400174F1E /* SouthCarolina.swift */; };
+		7FE5344124ABD7EE00174F1E /* SouthDakota.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5344024ABD7EE00174F1E /* SouthDakota.swift */; };
+		7FE5344324ABD7FC00174F1E /* Tennessee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5344224ABD7FC00174F1E /* Tennessee.swift */; };
+		7FE5344524ABD80400174F1E /* Texas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5344424ABD80400174F1E /* Texas.swift */; };
+		7FE5344724ABD80D00174F1E /* Utah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5344624ABD80D00174F1E /* Utah.swift */; };
+		7FE5344924ABD81500174F1E /* Vermont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5344824ABD81500174F1E /* Vermont.swift */; };
+		7FE5344B24ABD81D00174F1E /* Virginia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5344A24ABD81D00174F1E /* Virginia.swift */; };
+		7FE5344D24ABD82F00174F1E /* Washington.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5344C24ABD82F00174F1E /* Washington.swift */; };
+		7FE5344F24ABD83B00174F1E /* WestVirginia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5344E24ABD83B00174F1E /* WestVirginia.swift */; };
+		7FE5345124ABD85100174F1E /* Wisconsin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5345024ABD85100174F1E /* Wisconsin.swift */; };
+		7FE5345324ABD85A00174F1E /* Wyoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5345224ABD85A00174F1E /* Wyoming.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F3E887824A538F400493097 /* License Plate Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "License Plate Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F3E887B24A538F400493097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F3E887D24A538F400493097 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F3E888024A538F400493097 /* License_Plate_Search.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = License_Plate_Search.xcdatamodel; sourceTree = "<group>"; };
+		7F3E888224A538F400493097 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F3E888424A538FA00493097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F3E888724A538FA00493097 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F3E888A24A538FA00493097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F3E888C24A538FA00493097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F3E889424A53B2D00493097 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		7F3E889624A5456500493097 /* StateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetail.swift; sourceTree = "<group>"; };
+		7F50D13024C1FC940043E903 /* StateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateProvider.swift; sourceTree = "<group>"; };
+		7F63B74324BDF1460068AAB4 /* StateDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailCell.swift; sourceTree = "<group>"; };
+		7FE533EC24AB8D2800174F1E /* Plate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plate.swift; sourceTree = "<group>"; };
+		7FE533EE24AB8DAF00174F1E /* Alabama.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alabama.swift; sourceTree = "<group>"; };
+		7FE533F124ABD61100174F1E /* Alaska.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alaska.swift; sourceTree = "<group>"; };
+		7FE533F324ABD62200174F1E /* Arizona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arizona.swift; sourceTree = "<group>"; };
+		7FE533F524ABD62C00174F1E /* Arkansas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arkansas.swift; sourceTree = "<group>"; };
+		7FE533F724ABD63C00174F1E /* California.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = California.swift; sourceTree = "<group>"; };
+		7FE533F924ABD64500174F1E /* Colorado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorado.swift; sourceTree = "<group>"; };
+		7FE533FB24ABD64D00174F1E /* Connecticut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connecticut.swift; sourceTree = "<group>"; };
+		7FE533FD24ABD65B00174F1E /* Delaware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delaware.swift; sourceTree = "<group>"; };
+		7FE533FF24ABD66200174F1E /* Florida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Florida.swift; sourceTree = "<group>"; };
+		7FE5340124ABD66900174F1E /* Georgia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Georgia.swift; sourceTree = "<group>"; };
+		7FE5340324ABD67B00174F1E /* Hawaii.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hawaii.swift; sourceTree = "<group>"; };
+		7FE5340524ABD68300174F1E /* Idaho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idaho.swift; sourceTree = "<group>"; };
+		7FE5340724ABD68B00174F1E /* Illinois.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Illinois.swift; sourceTree = "<group>"; };
+		7FE5340924ABD69600174F1E /* Indiana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indiana.swift; sourceTree = "<group>"; };
+		7FE5340B24ABD6A200174F1E /* Iowa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iowa.swift; sourceTree = "<group>"; };
+		7FE5340D24ABD6A900174F1E /* Kansas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kansas.swift; sourceTree = "<group>"; };
+		7FE5340F24ABD6B000174F1E /* Kentucky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kentucky.swift; sourceTree = "<group>"; };
+		7FE5341124ABD6B800174F1E /* Louisiana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Louisiana.swift; sourceTree = "<group>"; };
+		7FE5341324ABD6C700174F1E /* Maine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maine.swift; sourceTree = "<group>"; };
+		7FE5341624ABD6D600174F1E /* Maryland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maryland.swift; sourceTree = "<group>"; };
+		7FE5341824ABD6E900174F1E /* Massachusetts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Massachusetts.swift; sourceTree = "<group>"; };
+		7FE5341A24ABD70500174F1E /* Michigan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Michigan.swift; sourceTree = "<group>"; };
+		7FE5341C24ABD70C00174F1E /* Minnesota.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minnesota.swift; sourceTree = "<group>"; };
+		7FE5341E24ABD71400174F1E /* Mississippi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mississippi.swift; sourceTree = "<group>"; };
+		7FE5342024ABD72200174F1E /* Missouri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missouri.swift; sourceTree = "<group>"; };
+		7FE5342224ABD72F00174F1E /* Montana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Montana.swift; sourceTree = "<group>"; };
+		7FE5342424ABD73500174F1E /* Nebraska.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nebraska.swift; sourceTree = "<group>"; };
+		7FE5342624ABD73C00174F1E /* Nevada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nevada.swift; sourceTree = "<group>"; };
+		7FE5342824ABD75100174F1E /* NewHampshire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHampshire.swift; sourceTree = "<group>"; };
+		7FE5342A24ABD75B00174F1E /* NewJersey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJersey.swift; sourceTree = "<group>"; };
+		7FE5342C24ABD76200174F1E /* NewMexico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMexico.swift; sourceTree = "<group>"; };
+		7FE5342E24ABD76C00174F1E /* NewYork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYork.swift; sourceTree = "<group>"; };
+		7FE5343024ABD77D00174F1E /* NorthCarolina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthCarolina.swift; sourceTree = "<group>"; };
+		7FE5343224ABD78700174F1E /* NorthDakota.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthDakota.swift; sourceTree = "<group>"; };
+		7FE5343424ABD79200174F1E /* Ohio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ohio.swift; sourceTree = "<group>"; };
+		7FE5343624ABD7B100174F1E /* Oklahoma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oklahoma.swift; sourceTree = "<group>"; };
+		7FE5343824ABD7B900174F1E /* Oregon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oregon.swift; sourceTree = "<group>"; };
+		7FE5343A24ABD7CA00174F1E /* Pennsylvania.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pennsylvania.swift; sourceTree = "<group>"; };
+		7FE5343C24ABD7DB00174F1E /* RhodeIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhodeIsland.swift; sourceTree = "<group>"; };
+		7FE5343E24ABD7E400174F1E /* SouthCarolina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthCarolina.swift; sourceTree = "<group>"; };
+		7FE5344024ABD7EE00174F1E /* SouthDakota.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthDakota.swift; sourceTree = "<group>"; };
+		7FE5344224ABD7FC00174F1E /* Tennessee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tennessee.swift; sourceTree = "<group>"; };
+		7FE5344424ABD80400174F1E /* Texas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texas.swift; sourceTree = "<group>"; };
+		7FE5344624ABD80D00174F1E /* Utah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utah.swift; sourceTree = "<group>"; };
+		7FE5344824ABD81500174F1E /* Vermont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vermont.swift; sourceTree = "<group>"; };
+		7FE5344A24ABD81D00174F1E /* Virginia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Virginia.swift; sourceTree = "<group>"; };
+		7FE5344C24ABD82F00174F1E /* Washington.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Washington.swift; sourceTree = "<group>"; };
+		7FE5344E24ABD83B00174F1E /* WestVirginia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestVirginia.swift; sourceTree = "<group>"; };
+		7FE5345024ABD85100174F1E /* Wisconsin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wisconsin.swift; sourceTree = "<group>"; };
+		7FE5345224ABD85A00174F1E /* Wyoming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wyoming.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F3E887524A538F400493097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F3E886F24A538F300493097 = {
+			isa = PBXGroup;
+			children = (
+				7F3E887A24A538F400493097 /* License Plate Search */,
+				7F3E887924A538F400493097 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F3E887924A538F400493097 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F3E887824A538F400493097 /* License Plate Search.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F3E887A24A538F400493097 /* License Plate Search */ = {
+			isa = PBXGroup;
+			children = (
+				7FE533E524AA3E1100174F1E /* State Plates */,
+				7F3E887B24A538F400493097 /* AppDelegate.swift */,
+				7F3E887D24A538F400493097 /* SceneDelegate.swift */,
+				7F3E888224A538F400493097 /* ContentView.swift */,
+				7F3E889624A5456500493097 /* StateDetail.swift */,
+				7F3E889424A53B2D00493097 /* State.swift */,
+				7FE533EC24AB8D2800174F1E /* Plate.swift */,
+				7F50D13024C1FC940043E903 /* StateProvider.swift */,
+				7F63B74324BDF1460068AAB4 /* StateDetailCell.swift */,
+				7FE533F024AB8DB900174F1E /* State */,
+				7F3E888424A538FA00493097 /* Assets.xcassets */,
+				7F3E888924A538FA00493097 /* LaunchScreen.storyboard */,
+				7F3E888C24A538FA00493097 /* Info.plist */,
+				7F3E887F24A538F400493097 /* License_Plate_Search.xcdatamodeld */,
+				7F3E888624A538FA00493097 /* Preview Content */,
+			);
+			path = "License Plate Search";
+			sourceTree = "<group>";
+		};
+		7F3E888624A538FA00493097 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7F3E888724A538FA00493097 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7FE533E524AA3E1100174F1E /* State Plates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "State Plates";
+			sourceTree = "<group>";
+		};
+		7FE533F024AB8DB900174F1E /* State */ = {
+			isa = PBXGroup;
+			children = (
+				7FE533EE24AB8DAF00174F1E /* Alabama.swift */,
+				7FE533F124ABD61100174F1E /* Alaska.swift */,
+				7FE533F324ABD62200174F1E /* Arizona.swift */,
+				7FE533F524ABD62C00174F1E /* Arkansas.swift */,
+				7FE533F724ABD63C00174F1E /* California.swift */,
+				7FE533F924ABD64500174F1E /* Colorado.swift */,
+				7FE533FB24ABD64D00174F1E /* Connecticut.swift */,
+				7FE533FD24ABD65B00174F1E /* Delaware.swift */,
+				7FE533FF24ABD66200174F1E /* Florida.swift */,
+				7FE5340124ABD66900174F1E /* Georgia.swift */,
+				7FE5340324ABD67B00174F1E /* Hawaii.swift */,
+				7FE5340524ABD68300174F1E /* Idaho.swift */,
+				7FE5340724ABD68B00174F1E /* Illinois.swift */,
+				7FE5340924ABD69600174F1E /* Indiana.swift */,
+				7FE5340B24ABD6A200174F1E /* Iowa.swift */,
+				7FE5340D24ABD6A900174F1E /* Kansas.swift */,
+				7FE5340F24ABD6B000174F1E /* Kentucky.swift */,
+				7FE5341124ABD6B800174F1E /* Louisiana.swift */,
+				7FE5341324ABD6C700174F1E /* Maine.swift */,
+				7FE5341624ABD6D600174F1E /* Maryland.swift */,
+				7FE5341824ABD6E900174F1E /* Massachusetts.swift */,
+				7FE5341A24ABD70500174F1E /* Michigan.swift */,
+				7FE5341C24ABD70C00174F1E /* Minnesota.swift */,
+				7FE5341E24ABD71400174F1E /* Mississippi.swift */,
+				7FE5342024ABD72200174F1E /* Missouri.swift */,
+				7FE5342224ABD72F00174F1E /* Montana.swift */,
+				7FE5342424ABD73500174F1E /* Nebraska.swift */,
+				7FE5342624ABD73C00174F1E /* Nevada.swift */,
+				7FE5342824ABD75100174F1E /* NewHampshire.swift */,
+				7FE5342A24ABD75B00174F1E /* NewJersey.swift */,
+				7FE5342C24ABD76200174F1E /* NewMexico.swift */,
+				7FE5342E24ABD76C00174F1E /* NewYork.swift */,
+				7FE5343024ABD77D00174F1E /* NorthCarolina.swift */,
+				7FE5343224ABD78700174F1E /* NorthDakota.swift */,
+				7FE5343424ABD79200174F1E /* Ohio.swift */,
+				7FE5343624ABD7B100174F1E /* Oklahoma.swift */,
+				7FE5343824ABD7B900174F1E /* Oregon.swift */,
+				7FE5343A24ABD7CA00174F1E /* Pennsylvania.swift */,
+				7FE5343C24ABD7DB00174F1E /* RhodeIsland.swift */,
+				7FE5343E24ABD7E400174F1E /* SouthCarolina.swift */,
+				7FE5344024ABD7EE00174F1E /* SouthDakota.swift */,
+				7FE5344224ABD7FC00174F1E /* Tennessee.swift */,
+				7FE5344424ABD80400174F1E /* Texas.swift */,
+				7FE5344624ABD80D00174F1E /* Utah.swift */,
+				7FE5344824ABD81500174F1E /* Vermont.swift */,
+				7FE5344A24ABD81D00174F1E /* Virginia.swift */,
+				7FE5344C24ABD82F00174F1E /* Washington.swift */,
+				7FE5344E24ABD83B00174F1E /* WestVirginia.swift */,
+				7FE5345024ABD85100174F1E /* Wisconsin.swift */,
+				7FE5345224ABD85A00174F1E /* Wyoming.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F3E887724A538F400493097 /* License Plate Search */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F3E888F24A538FA00493097 /* Build configuration list for PBXNativeTarget "License Plate Search" */;
+			buildPhases = (
+				7F3E887424A538F400493097 /* Sources */,
+				7F3E887524A538F400493097 /* Frameworks */,
+				7F3E887624A538F400493097 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "License Plate Search";
+			productName = "License Plate Search";
+			productReference = 7F3E887824A538F400493097 /* License Plate Search.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F3E887024A538F300493097 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Jared Detro";
+				TargetAttributes = {
+					7F3E887724A538F400493097 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 7F3E887324A538F400493097 /* Build configuration list for PBXProject "License Plate Search" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F3E886F24A538F300493097;
+			productRefGroup = 7F3E887924A538F400493097 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F3E887724A538F400493097 /* License Plate Search */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F3E887624A538F400493097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F3E888B24A538FA00493097 /* LaunchScreen.storyboard in Resources */,
+				7F3E888824A538FA00493097 /* Preview Assets.xcassets in Resources */,
+				7F3E888524A538FA00493097 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F3E887424A538F400493097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE5340E24ABD6A900174F1E /* Kansas.swift in Sources */,
+				7F3E889724A5456500493097 /* StateDetail.swift in Sources */,
+				7FE533EF24AB8DAF00174F1E /* Alabama.swift in Sources */,
+				7FE5341D24ABD70C00174F1E /* Minnesota.swift in Sources */,
+				7FE533FA24ABD64500174F1E /* Colorado.swift in Sources */,
+				7FE5342D24ABD76200174F1E /* NewMexico.swift in Sources */,
+				7FE5341424ABD6C700174F1E /* Maine.swift in Sources */,
+				7F3E888124A538F400493097 /* License_Plate_Search.xcdatamodeld in Sources */,
+				7FE5340A24ABD69600174F1E /* Indiana.swift in Sources */,
+				7F50D13124C1FC940043E903 /* StateProvider.swift in Sources */,
+				7FE5344D24ABD82F00174F1E /* Washington.swift in Sources */,
+				7FE5340C24ABD6A200174F1E /* Iowa.swift in Sources */,
+				7FE5343F24ABD7E400174F1E /* SouthCarolina.swift in Sources */,
+				7FE5341F24ABD71400174F1E /* Mississippi.swift in Sources */,
+				7F3E887C24A538F400493097 /* AppDelegate.swift in Sources */,
+				7FE5341724ABD6D600174F1E /* Maryland.swift in Sources */,
+				7FE5343124ABD77D00174F1E /* NorthCarolina.swift in Sources */,
+				7FE5342924ABD75100174F1E /* NewHampshire.swift in Sources */,
+				7FE533F824ABD63C00174F1E /* California.swift in Sources */,
+				7FE5342B24ABD75B00174F1E /* NewJersey.swift in Sources */,
+				7F3E888324A538F400493097 /* ContentView.swift in Sources */,
+				7FE5341024ABD6B000174F1E /* Kentucky.swift in Sources */,
+				7FE5340624ABD68300174F1E /* Idaho.swift in Sources */,
+				7FE5345324ABD85A00174F1E /* Wyoming.swift in Sources */,
+				7FE5340424ABD67B00174F1E /* Hawaii.swift in Sources */,
+				7FE5343324ABD78700174F1E /* NorthDakota.swift in Sources */,
+				7FE533F624ABD62C00174F1E /* Arkansas.swift in Sources */,
+				7FE5344B24ABD81D00174F1E /* Virginia.swift in Sources */,
+				7FE5345124ABD85100174F1E /* Wisconsin.swift in Sources */,
+				7FE5342724ABD73C00174F1E /* Nevada.swift in Sources */,
+				7FE533ED24AB8D2800174F1E /* Plate.swift in Sources */,
+				7FE5341B24ABD70500174F1E /* Michigan.swift in Sources */,
+				7FE5340824ABD68B00174F1E /* Illinois.swift in Sources */,
+				7FE533FC24ABD64D00174F1E /* Connecticut.swift in Sources */,
+				7FE5344524ABD80400174F1E /* Texas.swift in Sources */,
+				7FE5341924ABD6E900174F1E /* Massachusetts.swift in Sources */,
+				7FE5344F24ABD83B00174F1E /* WestVirginia.swift in Sources */,
+				7FE533F424ABD62200174F1E /* Arizona.swift in Sources */,
+				7FE5343B24ABD7CA00174F1E /* Pennsylvania.swift in Sources */,
+				7FE5344924ABD81500174F1E /* Vermont.swift in Sources */,
+				7FE5343524ABD79200174F1E /* Ohio.swift in Sources */,
+				7FE5344724ABD80D00174F1E /* Utah.swift in Sources */,
+				7F3E889524A53B2D00493097 /* State.swift in Sources */,
+				7FE5344124ABD7EE00174F1E /* SouthDakota.swift in Sources */,
+				7FE5343924ABD7B900174F1E /* Oregon.swift in Sources */,
+				7FE533F224ABD61100174F1E /* Alaska.swift in Sources */,
+				7FE5342F24ABD76C00174F1E /* NewYork.swift in Sources */,
+				7F63B74424BDF1460068AAB4 /* StateDetailCell.swift in Sources */,
+				7FE5342124ABD72200174F1E /* Missouri.swift in Sources */,
+				7FE5342324ABD72F00174F1E /* Montana.swift in Sources */,
+				7FE5343724ABD7B100174F1E /* Oklahoma.swift in Sources */,
+				7FE5340224ABD66900174F1E /* Georgia.swift in Sources */,
+				7FE5343D24ABD7DB00174F1E /* RhodeIsland.swift in Sources */,
+				7FE5340024ABD66200174F1E /* Florida.swift in Sources */,
+				7FE533FE24ABD65B00174F1E /* Delaware.swift in Sources */,
+				7FE5344324ABD7FC00174F1E /* Tennessee.swift in Sources */,
+				7F3E887E24A538F400493097 /* SceneDelegate.swift in Sources */,
+				7FE5342524ABD73500174F1E /* Nebraska.swift in Sources */,
+				7FE5341224ABD6B800174F1E /* Louisiana.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F3E888924A538FA00493097 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F3E888A24A538FA00493097 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F3E888D24A538FA00493097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F3E888E24A538FA00493097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F3E889024A538FA00493097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"License Plate Search/Preview Content\"";
+				DEVELOPMENT_TEAM = 6MDNPLDFWU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "License Plate Search/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.License-Plate-Search";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F3E889124A538FA00493097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"License Plate Search/Preview Content\"";
+				DEVELOPMENT_TEAM = 6MDNPLDFWU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "License Plate Search/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.License-Plate-Search";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F3E887324A538F400493097 /* Build configuration list for PBXProject "License Plate Search" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F3E888D24A538FA00493097 /* Debug */,
+				7F3E888E24A538FA00493097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F3E888F24A538FA00493097 /* Build configuration list for PBXNativeTarget "License Plate Search" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F3E889024A538FA00493097 /* Debug */,
+				7F3E889124A538FA00493097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F3E887F24A538F400493097 /* License_Plate_Search.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F3E888024A538F400493097 /* License_Plate_Search.xcdatamodel */,
+			);
+			currentVersion = 7F3E888024A538F400493097 /* License_Plate_Search.xcdatamodel */;
+			path = License_Plate_Search.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7F3E887024A538F300493097 /* Project object */;
+}
